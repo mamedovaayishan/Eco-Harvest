@@ -639,11 +639,15 @@ footer .container .row .title-col .vegetables .card-img img{
 footer .container .row .main-footer{
 
   width: 100%;
-  height: 55vh;
+  height: 60vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-image: url(../images/bg6.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 footer .container .row .main-footer  .footer{
   margin-top: 40px;
@@ -711,10 +715,14 @@ footer .container .row .main-footer .col h2{
   font-family: 'Rubik', sans-serif;
   font-weight: normal;
   color: #112433;
-  margin-top: 0px;
   font-style: normal;
   font-weight: 400;
   text-transform: normal;
+  text-underline-offset: 30px;
+  text-decoration-thickness: 5px;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: #fff;
 }
 footer .container .row .main-footer .col ul{
   margin-top: 70px;
@@ -738,4 +746,31 @@ footer .container .row .main-footer .col:nth-child(4)  ul li a{
   justify-content: space-between;
   text-align: center;
   align-items: center;
+}
+
+footer .container .row .main-footer .line-footer{
+  position: relative;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+footer .container .row .main-footer .line-footer span{
+  font-size: 18px;
+  margin-top: 10px;
+  color: #f3c444
+  
+}
+footer .container .row .main-footer .line-footer span .grey{
+  color:#7b8e9d ;
+}
+footer .container .row .main-footer .line-footer::before{
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #2b7443;
+  opacity: 0.8;
+  top: 0;
 }
